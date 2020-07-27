@@ -1,5 +1,5 @@
 #修改TNAME: K2P-5.0 中的K2P-5.0为你需要编译的型号，注意名称要与configs/templates/目录下的名字相同
-name: Build Padavan
+name: Build Padavan 0604
 
 on: 
   release:
@@ -32,7 +32,7 @@ jobs:
         pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget
     - name: Clone source code
       run: |
-        git clone --depth=1 https://github.com/chongshengB/rt-n56u.git /opt/rt-n56u
+        git clone https://github.com/chongshengB/rt-n56u.git /opt/rt-n56u
         cd /opt/rt-n56u
         git checkout b07c6d79b6509ba50052495789ba6066bf08b04
         cd /opt/rt-n56u/toolchain-mipsel
